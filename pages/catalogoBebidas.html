@@ -2,14 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa Villana / Catálogo de Bebidas</title>
     <!-- metas de seo -->
     <meta name="description" content="Productos caseros y regionales en alojamiento de Mendoza.">
     <meta name="author" content="Gabriel Villanueva">
     <meta name="keywords" content="mendoza, alojamiento, vacaciones, productos, regionales">
     <meta name="robots" content="index,follow">
-    <!--css BS-->
+    <link rel="shortcut icon" href="../img/favicon.jfif" type="image/x-icon">
+       <!--css BS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <!--mi css-->
     <link rel="stylesheet" href="../css/main.css">
@@ -79,66 +81,57 @@
 
     <!--inicia sistema de grilla BS-->
     <main class="bgGral container-fluid">
-        <h1>La Cantina</h1>
-       
+        <h1>Bebidas</h1>
+
         <div class="row card-group">
-            <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
-                <div class="card" style="width: 18rem;" id="Fernet">
-                    <img src="../img/Shop/bebida.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="producto">
-                            <h5 class="nombre">Fernet</h5>
-                            <p class="precio">XX</p>
-                        </div>
-                    <button type="button" class="btn">Agregar</button>
-                    </div>
-                </div>
-             </article>
-
-             <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
-                <div class="card" style="width: 18rem;" id="Vino Blanco">
-                    <img src="../img/Shop/bebida.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="producto">
-                            <h5 class="nombre">Fernet</h5>
-                            <p class="precio">XX</p>
-                        </div>  
-                    <button type="button" class="btn">Agregar</button>
-                    </div>
-                </div>
-             </article>
-
-
-             <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
-                <div class="card" style="width: 18rem;" id="Vino Tinto">
-                    <img src="../img/Shop/bebida.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="producto">
-                            <h5 class="nombre">Fernet</h5>
-                            <p class="precio">XX</p>
-                        </div>
-                    <button type="button" class="btn">Agregar</button>
-                    </div>
-                </div>
-             </article>
-
-
-             <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
-                <div class="card" style="width: 18rem;" id="Cerveza">
-                    <img src="../img/Shop/bebida.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="producto">
-                            <h5 class="nombre">Fernet</h5>
-                            <p class="precio">XX</p>
-                        </div>
-                    <button type="button" class="btn">Agregar</button>
-                    </div>
-                </div>
-             </article>
-
-        </div>
-         
           
+          <article class="col-sm-12 col-md-6 col-lg-2 mb-2">
+             <div class="card" style="width: 10rem;">
+                <img src="../img/bebidas/andesrubia.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title center">ANDES ORIGEN</h5>
+                  <p class="center">$500</p>
+                  <button type="button" class="btn center btn-cat" id="btnAndesRubia">Agregar</button>
+                </div>
+              </div>
+          </article>
+
+          <article class="col-sm-12 col-md-6 col-lg-2 mb-2">
+              <div class="card" style="width: 10rem;">
+                <img src="../img/bebidas/andesroja.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title center">ANDES ROJA</h5>
+                  <p class="center">$550</p>
+                  <button type="button" class="btn center btn-cat"id="btnAndesRoja">Agregar</button>
+                </div>
+              </div>
+          </article>   
+
+          <article class="col-sm-12 col-md-6 col-lg-2 mb-2">
+            <div class="card" style="width: 10rem;">
+              <img src="../img/bebidas/andesnegra.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title center">ANDES NEGRA</h5>
+                <p class="center">$500</p>
+                <button type="button" class="btn center btn-cat"id="btnAndesNegra">Agregar</button>
+              </div>
+            </div>
+          </article> 
+
+          <article class="col-sm-12 col-md-6 col-lg-2 mb-2">
+              <div class="card" style="width: 10rem;">
+                <img src="../img/bebidas/andesrojaipa.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title center">ANDES ROJA IPA</h5>
+                  <p class="center">$550</p>
+                  <button type="button" class="btn center btn-cat" id="btnAndesRojaIpa">Agregar</button>
+                </div>
+              </div>
+          </article>   
+     
+          
+
+       
 
 
 
@@ -166,7 +159,7 @@
 
     <!--js BS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-    <script src="/JS/app.js"></script>
-    <script src="/JS/bebidas.js"></script>
+    <script src="../JS/app.js"></script>
+    <script src="../JS/bebidas.js"></script>
   </body>
 </html>

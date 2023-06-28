@@ -1,6 +1,6 @@
 function validarEdad() {
     let edad = prompt("Ingresa tu edad:");
-  
+          
     if (!isNaN(parseInt(edad))) {
          if (parseInt(edad) >= 18) {
             window.location.href= "catalogoBebidas.html";
