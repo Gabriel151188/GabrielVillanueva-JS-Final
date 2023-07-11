@@ -43,7 +43,8 @@ submitButton.addEventListener("click", function(e){
     localStorage.setItem("comentario", textArea);
 
 
-    let mailStorage = localStorage.getItem("email")
-        console.log("el mail guardado en el local es: ", mailStorage);
+    
  
 })
+let mailStorage = localStorage.getItem("email")
+        console.log("el mail guardado en el local es: ", mailStorage);
