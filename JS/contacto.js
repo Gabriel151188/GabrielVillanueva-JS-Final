@@ -28,7 +28,7 @@ submitButton.addEventListener("click", function(e){
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;        
         
     if (emailRegex.test(email)) {
-        
+        alert("la direccion es válida");
         } else {
         alert("revisa la direccion");
     }   
