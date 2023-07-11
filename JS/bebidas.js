@@ -14,19 +14,26 @@ const productos = [
   new Producto('ANDES ROJA IPA', 550),
 ];
 
+
+
+
 const carrito = [];
 
 
 function agregarAlCarrito(nombre, precio) {
   let producto = new Producto(nombre, precio);
   carrito.push(producto);
-  console.log("Se agregó al carrito: " + nombre + " - Precio: $" + precio);
-  console.log("Total del carrito: $" + calcularTotal());
-  console.log("En el carrito se encuentra:");
+  localStorage.setItem("producto", JSON.stringify(carrito))
+   console.log("Se agregó al carrito: " + nombre + " - Precio: $" + precio);
+   console.log("Total del carrito: $" + calcularTotal());
+   console.log("En el carrito se encuentra:");
   carrito.forEach((producto) => {
-    console.log(producto.nombre);
-  })
-}
+  // console.log(producto.nombre);
+  let productStorage = localStorage.getItem("producto", (carrito))
+  console.log("Estos productos estan en el carrito", productStorage, "representando un total de $" + calcularTotal());
+  
+   })
+ }
 
 
 
@@ -52,8 +59,4 @@ function calcularTotal() {
 }
 
 
-const productoEncontrado = productos.find(producto => producto.nombre === 'ANDES ROJA');
-console.log(productoEncontrado);
 
-const productosFiltrados = productos.filter(producto => producto.precio > 500);
-console.log(productosFiltrados);
