@@ -28,8 +28,7 @@ submitButton.addEventListener("click", function(e){
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;        
         
     if (emailRegex.test(email)) {
-        let mailStorage = localStorage.getItem("email")
-        console.log("el mail guardado en el local es: ", mailStorage);
+        
         } else {
         alert("revisa la direccion");
     }   
@@ -44,6 +43,7 @@ submitButton.addEventListener("click", function(e){
     localStorage.setItem("comentario", textArea);
 
 
-    
+    let mailStorage = localStorage.getItem("email")
+        console.log("el mail guardado en el local es: ", mailStorage);
  
 })
