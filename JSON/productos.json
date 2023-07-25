@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "name": "Andes Rubia",
+      "precio": 500,
+      "description": "Cerveza Rubia en lata",
+      "imagen": "../img/bebidas/andesrubia.webp"
+    },
+    {
+      "id": 2,
+      "name": "Andes Roja",
+      "precio": 550,
+      "description": "Cerveza Roja en lata",
+      "imagen": "../img/bebidas/andesroja.webp"
+    },
+    {
+      "id": 3,
+      "name": "Andes Negra",
+      "precio": 500,
+      "description": "Cerveza Negra en lata",
+      "imagen": "../img/bebidas/andesnegra.webp"
+    },
+    {
+      "id": 4,
+      "name": "Andes Roja Ipa",
+      "precio": 550,
+      "description": "Cerveza Roja Ipa en lata", 
+      "imagen": "../img/bebidas/andesrojaipa.webp"
+    }
+    
+  ]

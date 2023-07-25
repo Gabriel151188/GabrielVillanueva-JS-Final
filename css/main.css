@@ -185,3 +185,13 @@ p {
 
 /*# sourceMappingURL=main.css.map */
 
+/* Agrega esta regla CSS para que las cards se muestren en una misma fila */
+.row .card {
+  flex: 1 0 10rem; /* Permite que las cards crezcan para ocupar el espacio disponible */
+  margin-right: 1rem; /* Agrega un pequeño margen entre las cards */
+}
+
+/* Agrega esta regla CSS para que las cards no tengan margen a la derecha en la última fila */
+.row .card:last-child {
+  margin-right: 0;
+}

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../css/main.css">
   </head>
   <body class="oF">
+    
     <!--inicia nav-->
     <nav class="navbar botonera navbar-expand-lg nav">
         <div class="container-fluid">
@@ -49,6 +50,69 @@
       </nav>
     <!--end nav-->
 
+    <!-- estilo carrito -->
+    <style>
+  
+      #carrito-productos {
+        background-color: deeppink;
+        padding: 2px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+      }
+
+      .carrito-producto {
+          margin-bottom: 10px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: px;
+          background-color: #fff;
+      }
+
+      .carrito-producto p {
+          margin: 0;
+          font-weight: bold;
+      }
+
+      .carrito-producto button {
+          background-color: #dc3545;
+          color: #fff;
+          border: none;
+          padding: 5px 10px;
+          border-radius: 30px;
+          cursor: pointer;
+      }
+
+      /* Estilos para el mensaje del carrito vacío */
+      #carrito-vacio {
+          text-align: center;
+          font-size: 18px;
+          padding: 20px;
+          background-color: black;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+      }
+  </style>
+
+    <!-- fin estilo carrito -->
+
+
+
+    <!-- inicio carrito -->
+    <div class="container, btnFNP ">
+     <div id="carrito-container">
+      <h2>Carrito de compras</h2>
+      <div id="carrito-productos"  class="center">
+        <!-- Aquí se mostrarán los productos del carrito -->
+        <!-- Mensaje para el carrito vacío -->
+        <div id="carrito-vacio" style="display: none">
+            No hay productos en el carrito.
+        </div>
+    </div>
+    </div>
+  </div>
+
+    <!-- fin carrito -->
+    
     <!--inicia carousel-->
     
     <div id="carouselExampleIndicators" class="carousel slide">
@@ -83,7 +147,11 @@
     <main class="bgGral container-fluid">
         <h1>Bebidas</h1>
 
-        <div class="row card-group">
+        <div id="product-container" class="row card-group">
+          <!-- Aquí se agregarán las cards generadas dinámicamente -->
+        </div>
+
+        <!-- <div class="row card-group">
           
           <article class="col-sm-12 col-md-6 col-lg-2 mb-2">
              <div class="card" style="width: 10rem;">
@@ -127,14 +195,8 @@
                   <button type="button" class="btn center btn-cat" id="btnAndesRojaIpa">Agregar</button>
                 </div>
               </div>
-          </article>   
+          </article>    -->
      
-          
-
-       
-
-
-
         
      </main>
 
@@ -158,8 +220,12 @@
 </footer>
 
     <!--js BS-->
+    <script src="../JSON/productos.json"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-    <script src="../JS/app.js"></script>
+    <script src="../JSON/productos.json"></script>
     <script src="../JS/bebidas.js"></script>
+    
   </body>
 </html>
