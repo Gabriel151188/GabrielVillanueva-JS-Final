@@ -51,6 +51,7 @@ const productContainer = document.querySelector("#product-container");
 async function getJProdCharacters() {
   try {
     const response = await fetch("../JSON/productos.json");
+    
     const data = await response.json();
 
     if (Array.isArray(data)) {
