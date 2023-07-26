@@ -13,11 +13,7 @@ async function agregarAlCarrito(nombre, precio) {
   carrito.push(producto);
   localStorage.setItem("producto", JSON.stringify(carrito));
   actualizarCarritoVisual();
-  // console.log("Se agregó al carrito: " + nombre + " - Precio: $" + precio);
-  // console.log("Total del carrito: $" + calcularTotal());
-  // console.log("En el carrito se encuentra:");
   carrito.forEach((producto) => {
-    // console.log(producto.nombre);
   });
 }
 
@@ -26,15 +22,10 @@ async function eliminarDelCarrito(nombre) {
   if (indice !== -1) {
     carrito.splice(indice, 1);
     localStorage.setItem("producto", JSON.stringify(carrito));
-    actualizarCarritoVisual();
-    // console.log("Se eliminó del carrito: " + nombre);
-    // console.log("Total del carrito: $" + calcularTotal());
-    // console.log("En el carrito se encuentra:");
-    carrito.forEach((producto) => {
-      // console.log(producto.nombre);
+    actualizarCarritoVisual();   
+    carrito.forEach((producto) => {    
     });
   } else {
-    // console.log("El producto no existe en el carrito.");
   }
 }
 
@@ -99,10 +90,10 @@ const carritoVacioMsg = document.getElementById("carrito-vacio");
 
 function actualizarCarritoVisual() {
   const carritoProductos = document.getElementById("carrito-productos");
-  carritoProductos.innerHTML = ""; // Limpia el contenido actual
+  carritoProductos.innerHTML = ""; 
+  // Limpia el contenido actual
 
   if (carrito.length === 0) {
-    // console.log("el carro esta vacio");
     carritoVacioMsg.style.display = "block";
   } else {
     carrito.forEach((producto) => {
