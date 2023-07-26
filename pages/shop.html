@@ -51,17 +51,17 @@
       <!-- carrito -->
       <style>
         #carrito-productos {
-       background-color: deeppink;
-       padding: 2px;
-       border: 1px solid #ddd;
-       border-radius: 10px;
+       background-color: rgb(219, 189, 189);
+       padding: 10px;
+       border: 1px solid #ddd; 
+       border-radius: 0px;
      }
 
      .carrito-producto {
-         margin-bottom: 10px;
-         padding: 10px;
-         border: 1px solid #ccc;
-         border-radius: px;
+         margin-bottom: 1px;
+         padding: 10px; 
+         border: 1px solid #ccc; 
+         border-radius: 1px;
          background-color: #fff;
      }
 
@@ -83,8 +83,8 @@
      #carrito-vacio {
          text-align: center;
          font-size: 18px;
-         padding: 20px;
-         background-color: deeppink;
+         padding: 1px;
+         background-color:rgb(219, 189, 189);
          border: 1px solid #ddd;
          border-radius: 5px;
      }
@@ -92,7 +92,7 @@
 <div class="container, btnFNP ">
 <h2>Carrito de compras</h2>
 </div>
-   <div id="product-container" class="row" style="display: none;">
+   <div id="product-container" class="row" style="display: none">
        <!-- Aquí se mostrarán las cards de los productos -->
      </div>
    
@@ -152,7 +152,7 @@
               <div class="card-body">
                 <h2 class="card-title">Bebidas</h2>
                 <p class="card-text" style="height: 3em; overflow: hidden;text-overflow: ellipsis; white-space: nowrap;">Bebidas con alcohol y sin alcohol, para una comida o un aperitivo.</p>
-                <a href="catalogoBebidas.html" class="btn  center btn-gral" onclick="validarEdad()">Ingresar</a>
+                <a href="catalogoBebidas.html" class="btn center btn-gral" onclick="validarEdad(event)">Ingresar</a>
               </div>
             </div>
           </article>

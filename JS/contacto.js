@@ -1,5 +1,3 @@
-console.log ("reading for code...")
-
 //Obtener las referencias del elemento DOM
 
 let form = document.getElementById("myForm");
@@ -22,7 +20,7 @@ submitButton.addEventListener("click", function(e){
     let email = emailInput.value;
     let textArea = textAreaInput.value
 
-    console.log("el nombre es " + name + ", el telefono es " + tel + ", el email es " + email + " y este es el comentario " + textArea);
+    // console.log("el nombre es " + name + ", el telefono es " + tel + ", el email es " + email + " y este es el comentario " + textArea);
 
     //validacion del mail
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;        
@@ -44,6 +42,6 @@ submitButton.addEventListener("click", function(e){
 
 
     let mailStorage = localStorage.getItem("email")
-    console.log("el mail guardado en el local es: ", mailStorage);
+    // console.log("el mail guardado en el local es: ", mailStorage);
  
 })
